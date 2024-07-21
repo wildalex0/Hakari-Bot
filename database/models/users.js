@@ -17,5 +17,7 @@ module.exports = (sequelize, DataTypes) => {
             //Technically type timestamp but due to SQLITE being used it is TEXT
             type: DataTypes.TEXT
         }
-    })
-}
+    },{
+        timestamp: false
+    });
+};
